@@ -25,11 +25,13 @@ body{
     z-index:1;
 
     background-color: #fff;
-
+    background: url(/Users/jonathanchang/bitmaker/crm-web3/water.jpg) no-repeat fixed center;
+	  background-size: 100%;
+/*
     background-image:-webkit-radial-gradient(center, circle farthest-corner, #fff, #e2e2e2);
     background-image:-moz-radial-gradient(center, circle farthest-corner, #fff, #e2e2e2);
     background-image:radial-gradient(center, circle farthest-corner, #fff, #e2e2e2);
-
+*/
     padding: 120px 0 600px;
     box-shadow: 0 3px 3px rgba(0,0,0,0.2);
 }
