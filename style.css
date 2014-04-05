@@ -36,7 +36,7 @@ body{
 
 header {
 	height: 150px;
-	background-color: black;
+	background-color: #0B99BC;
 }
 
 footer{
@@ -55,6 +55,12 @@ footer{
 }
 
 /* Set a width to the outermost UL, center it and fix it to the window */
+
+.head {
+	padding-top: 30px;
+	font-size: 4rem;
+	color: #fff;
+}
 
 footer > ul{
     width:960px;
@@ -176,7 +182,7 @@ footer p.home:before{
     background-position: 0 -110px;
 }
 
-footer p.services{
+footer p.view_all{
     background-color: #00b274;
 
     background-image:-webkit-linear-gradient(top, #00b274, #00a46b);
@@ -184,11 +190,11 @@ footer p.services{
     background-image:linear-gradient(top, #00b274, #00a46b);
 }
 
-footer p.services:before{
+footer p.view_all:before{
     background-position: 0 -129px;
 }
 
-footer p.reachus{
+footer p.search{
     background-color: #d75ba2;
 
     background-image:-webkit-linear-gradient(top, #d75ba2, #c75496);
@@ -196,7 +202,7 @@ footer p.reachus{
     background-image:linear-gradient(top, #d75ba2, #c75496);
 }
 
-footer p.reachus:before{
+footer p.search:before{
     background-position: 0 -89px;
 }
 
