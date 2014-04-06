@@ -61,7 +61,7 @@ footer{
 .head {
 	padding-top: 30px;
 	font-size: 4rem;
-	color: #fff;
+	color: #3B5998;
 }
 
 .form_container {
@@ -86,6 +86,10 @@ footer > ul{
 footer > ul > li{
     width:25%;
     float:left;
+}
+
+#main ul {
+    color: white;
 }
 
 footer ul{
