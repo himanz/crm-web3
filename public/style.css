@@ -23,10 +23,10 @@ body{
 #main{
     position:relative;
     z-index:1;
-
-    background-color: #fff;
     background: url(/water.jpg) no-repeat fixed center;
-	  background-size: 100%;
+    background-size: 100%;
+    background-color: #fff;
+    
 /*
     background-image:-webkit-radial-gradient(center, circle farthest-corner, #fff, #e2e2e2);
     background-image:-moz-radial-gradient(center, circle farthest-corner, #fff, #e2e2e2);
