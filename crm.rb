@@ -12,3 +12,6 @@ end
 get "/contacts/:id" do
 end
 
+get "/contacts/:id/edit" do
+end
+
