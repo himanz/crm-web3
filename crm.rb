@@ -9,8 +9,6 @@ DataMapper.setup(:default, "sqlite3:database.sqlite3")
 
 class Contact
 	include DataMapper::Resource
-
-  attr_accessor :first_name, :last_name, :email, :note, :id, :date
 	
 	property :id, Serial
 	property :first_name, String
@@ -19,6 +17,9 @@ class Contact
 	property :note, String
 	property :date, String
 end
+
+DataMapper.finalize
+DataMapper.auto_upgrade!
 
 get "/" do
 	@crm_app_name = "Wonderful World of CRM"
