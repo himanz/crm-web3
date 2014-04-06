@@ -57,3 +57,12 @@ put "/contacts/:id" do
 	end
 end
 
+delete "/contacts/:id" do
+	@contact = @@rolodex.find(params[:id].to_i)
+	if @contact
+		@@rolodex.remove_contact(@contact)
+		redirect to("/contacts")
+	else
+		raise Sinatra::NotFound
+	end
+end
