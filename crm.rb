@@ -37,8 +37,14 @@ end
 
 get "/contacts/search_result" do
 	@contacts = []
-	if params[:first_name]
-		@contacts = Contact.all(first_name: params[:first_name])
+	if params[:search] == "first_name"
+		@contacts = Contact.all(first_name: params[:input])
+	elsif params[:search] == "last_name"
+		@contacts = Contact.all(last_name: params[:input])
+	elsif params[:search] == "email"
+		@contacts = Contact.all(email: params[:input])
+	elsif params[:search] == "note"
+		@contacts = Contact.all(note: params[:input])
 		erb :search_result
 	end
 end

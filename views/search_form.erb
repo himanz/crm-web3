@@ -2,10 +2,11 @@
 
 <div class="form_container">
 	<form action="/contacts/search_result" method="GET">
-		First Name <input type="text" name="first_name"></br>
-		Last Name <input type="text" name="last_name"></br>
-		Email <input type="text" name="email"></br>
-		Note <input type="text" name="note"></br>
+		First Name <input type="radio" name="search" value="first_name"></br>
+		Last Name <input type="radio" name="search" value="last_name"></br>
+		Email ------ <input type="radio" name="search" value="email"></br>
+		Note ------- <input type="radio" name="search" value="note"></br>
+		Enter search word <input type="text" name="input"></br>
 		<input type="submit" name="Submit"></br>
 	</form>
 </div>
