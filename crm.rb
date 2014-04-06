@@ -8,15 +8,16 @@ DataMapper.setup(:default, "sqlite3:database.sqlite3")
 @@rolodex = Rolodex.new
 
 class Contact
+	include DataMapper::Resource
+
   attr_accessor :first_name, :last_name, :email, :note, :id, :date
 	
-	def initialize(first_name, last_name, email, note)
-		@first_name = first_name
-		@last_name = last_name
-		@email = email
-		@note = note
-		@date = Time.now
-	end 
+	property :id, Serial
+	property :first_name, String
+	property :last_name, String
+	property :email, String
+	property :note, String
+	property :date, String
 end
 
 get "/" do
