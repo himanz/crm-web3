@@ -45,8 +45,8 @@ get "/contacts/search_result" do
 		@contacts = Contact.all(email: params[:input])
 	elsif params[:search] == "note"
 		@contacts = Contact.all(note: params[:input])
-		erb :search_result
 	end
+	erb :search_result
 end
 
 post '/contacts' do
