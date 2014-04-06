@@ -25,7 +25,7 @@ body{
     z-index:1;
 
     background-color: #fff;
-    background: url(/Users/jonathanchang/bitmaker/crm-web3/water.jpg) no-repeat fixed center;
+    background: url(/water.jpg) no-repeat fixed center;
 	  background-size: 100%;
 /*
     background-image:-webkit-radial-gradient(center, circle farthest-corner, #fff, #e2e2e2);
