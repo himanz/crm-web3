@@ -196,7 +196,7 @@ footer p.navi:before{
     background-position: 0 -129px;
 }
 
-footer p.search{
+footer p.contact{
     background-color: #d75ba2;
 
     background-image:-webkit-linear-gradient(top, #d75ba2, #c75496);
@@ -204,7 +204,7 @@ footer p.search{
     background-image:linear-gradient(top, #d75ba2, #c75496);
 }
 
-footer p.search:before{
+footer p.contact:before{
     background-position: 0 -89px;
 }
 
