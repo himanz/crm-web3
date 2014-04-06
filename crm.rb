@@ -50,12 +50,13 @@ get "/contacts/search_result" do
 end
 
 post '/contacts' do
-	Contact.create(
+	@contact = Contact.create(
 	  :first_name => params[:first_name],
 	  :last_name => params[:last_name],
 	  :email => params[:email],
 	  :note => params[:note]
-	)
+	)	
+	@contact.update(:date => Time.now)
   redirect to('/contacts')
 end
 
@@ -67,8 +68,6 @@ get "/contacts/:id" do
     raise Sinatra::NotFound
   end
 end
-
-
 
 get "/contacts/:id/edit" do
 	@contact = Contact.get(params[:id].to_i)
