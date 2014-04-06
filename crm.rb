@@ -46,7 +46,7 @@ post '/contacts' do
 end
 
 get "/contacts/:id" do
-	@contact = @@rolodex.find(params[:id].to_i)
+	@contact = Contact.get(params[:id].to_i)
   if @contact
     erb :show_contact
   else
