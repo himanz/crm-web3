@@ -1,70 +1,66 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <meta charset="utf-8"/>
-        <title>The CRM Web App</title>
+<head>
+  <meta charset="utf-8"/>
+  <title>The CRM Web App</title>
 
-        <link href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:700" rel="stylesheet" />
+  <link href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:700" rel="stylesheet" />
 
-        <link type="text/css" href="style.css" rel="stylesheet" />
-    </head>
+  <link type="text/css" href="/style.css" rel="stylesheet" />
+</head>
 
-    <body>
+<header class="header">
+  <h1 class="head">Wonderful World of CRM</h1>
+</header>
 
-        <header class="header">
-            <h1 class="head">Wonderful World of CRM</h1>
+<body>     
+  <div id="main">         
+    <div class="background_image">
+    </div>
+    <%= yield %>
+  </div>
 
-        </header>
-        <div id="main">
-            
-            
-            <div class="background_image">
-            </div>
-            <%= yield %>
-            <h1>A CSS3 slide-out footer.</h1>
-        </div>
+</body>
+<footer>
+
+  <ul>
+    <li>
+      <p class="home">Home</p>
+      <a class="logo" href="#">Jonathan Chang<i>&copy; 2014</i></a>
+    </li>
+    <li>
+      <p class="navi">Navigation</p>
+
+      <ul>
+        <li><a href="/contacts">View All</a></li>
+        <li><a href="/contacts/new">Add New Contact</a></li>
+        <li><a href="#">Mobile development</a></li>
+        <li><a href="#">Web &amp; Print Design</a></li>
+      </ul>
+    </li>
+    <li>
+      <p class="search">Search</p>
+
+      <ul>
+        <li><a href="#">Email</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li>555-123456789</li>
+      </ul>
+    </li>
+    <li>
+      <p class="clients">Clients</p>
+
+      <ul>
+        <li><a href="#">Login Area</a></li>
+        <li><a href="#">Support Center</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+    </li>
+  </ul>
+
+</footer>
 
 
-      <footer>
-
-        <ul>
-            <li>
-                <p class="home">Home</p>
-                <a class="logo" href="#">Company Name <i>&copy; 2013</i></a>
-            </li>
-            <li>
-                <p class="view_all">View All</p>
-
-                <ul>
-                    <li><a href="#">3D modeling</a></li>
-                    <li><a href="#">Web development</a></li>
-                    <li><a href="#">Mobile development</a></li>
-                    <li><a href="#">Web &amp; Print Design</a></li>
-                </ul>
-            </li>
-            <li>
-                <p class="search">Search</p>
-
-                <ul>
-                    <li><a href="#">Email</a></li>
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">Facebook</a></li>
-                    <li>555-123456789</li>
-                </ul>
-            </li>
-            <li>
-                <p class="clients">Clients</p>
-
-                <ul>
-                    <li><a href="#">Login Area</a></li>
-                    <li><a href="#">Support Center</a></li>
-                    <li><a href="#">FAQ</a></li>
-                </ul>
-            </li>
-        </ul>
-
-      </footer>
-
-    </body>
 </html>

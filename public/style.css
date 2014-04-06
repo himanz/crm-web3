@@ -184,7 +184,7 @@ footer p.home:before{
     background-position: 0 -110px;
 }
 
-footer p.view_all{
+footer p.navi{
     background-color: #00b274;
 
     background-image:-webkit-linear-gradient(top, #00b274, #00a46b);
@@ -192,7 +192,7 @@ footer p.view_all{
     background-image:linear-gradient(top, #00b274, #00a46b);
 }
 
-footer p.view_all:before{
+footer p.navi:before{
     background-position: 0 -129px;
 }
 
