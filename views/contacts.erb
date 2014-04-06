@@ -3,5 +3,11 @@
 <ul>
   <% @@rolodex.contacts.each do |contact| %>
     <li><%= contact.first_name %> <%= contact.last_name %></li>
+    <li><strong>ID: </strong> <%= contact.id %></li>
+    <li><strong>Email: </strong> <%= contact.email %></li>
+		<li><strong>Date Created: </strong> <%= contact.date %></li>
+		<li><strong>Note: </strong></li>
+		<li><%= contact.note %></li>
+		<li>--------------------</li>
   <% end %>
 </ul>

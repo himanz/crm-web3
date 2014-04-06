@@ -25,12 +25,13 @@ post '/contacts' do
   redirect to('/contacts')
 end
 
-get "/contacts/1000" do
-	@contact = @@rolodex.find(1000)
-	erb :show_contact
-end
-
 get "/contacts/:id" do
+	@contact = @@rolodex.find(params[:id].to_i)
+  if @contact
+    erb :show_contact
+  else
+    raise Sinatra::NotFound
+  end
 end
 
 get "/contacts/:id/edit" do
