@@ -5,7 +5,10 @@ get "/" do
 	erb :index
 end
 
-get "/contacts/new"
+get "/contacts/new" do
   erb :add_contact
+end
+
+get "/contacts/:id" do
 end
 
