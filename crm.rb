@@ -31,6 +31,18 @@ get "/contacts/new" do
   erb :new_contact
 end
 
+get "/contacts/search" do
+	erb :search_form
+end
+
+get "/contacts/search_result" do
+	@contacts = []
+	if params[:first_name]
+		@contacts = Contact.all(first_name: params[:first_name])
+		erb :search_result
+	end
+end
+
 post '/contacts' do
 	Contact.create(
 	  :first_name => params[:first_name],
@@ -49,6 +61,8 @@ get "/contacts/:id" do
     raise Sinatra::NotFound
   end
 end
+
+
 
 get "/contacts/:id/edit" do
 	@contact = Contact.get(params[:id].to_i)
@@ -82,3 +96,4 @@ delete "/contacts/:id" do
 		raise Sinatra::NotFound
 	end
 end
+
